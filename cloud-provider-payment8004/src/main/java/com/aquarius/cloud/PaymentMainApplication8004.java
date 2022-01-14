@@ -3,18 +3,18 @@ package com.aquarius.cloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Auther: dllAquarius
- * @Date: 2022/1/11
+ * @Date: 2022/1/13
  * @Description:
  */
 @SpringBootApplication
-@EnableEurekaClient
-@EnableDiscoveryClient
-public class PaymentMainApplication8001 {
+@EnableDiscoveryClient //该注解用于向使用consul或者zookeeper作为注册中心时注册服务
+
+public class PaymentMainApplication8004 {
+
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMainApplication8001.class,args);
+        SpringApplication.run(PaymentMainApplication8004.class,args);
     }
 }
